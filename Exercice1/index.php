@@ -1,4 +1,4 @@
-<?php $isOk = true; ?>
+<?php $number = 0; ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -14,10 +14,9 @@
     <div class="jumbotron shadow-lg mx-auto text-center">
       <p>
         <?php
-        if($isOk == false){
-          echo 'C\'est pas bon !!';
-        } else {
-          echo 'C\'est ok !!';
+        while($number <= 10){
+          echo 'Number = ' .$number. '<br>';
+          $number++;
         }
         ?>
       </p>
