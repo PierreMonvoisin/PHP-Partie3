@@ -1,4 +1,3 @@
-<?php $initialNumber = 1; ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -12,15 +11,12 @@
 
   <div class="row mt-5">
     <div class="jumbotron shadow-lg mx-auto text-center">
-      <p>
         <?php
-        while($initialNumber <= 10){
-          echo 'Number = ' .$initialNumber. '<br>';
-          $initialNumber = $initialNumber + ($initialNumber / 2);
-        }
-        ?>
-      </p>
-      <div class="text-right mt-1">Un message de la direction</div>
+        $initialNumber = 1;
+        while($initialNumber <= 10){ ?>
+          <p>Incrémentation = <?= $initialNumber ?></p>
+        <?php $initialNumber += $initialNumber / 2; } ?>
+      <p class="text-right mt-1">Un message de la direction</p>
     </div>
   </div>
 

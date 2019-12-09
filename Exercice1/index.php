@@ -1,4 +1,3 @@
-<?php $number = 0; ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -8,18 +7,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body class='container-fluid bg-secondary'>
+<body class="container-fluid bg-secondary">
 
   <div class="row mt-5">
     <div class="jumbotron shadow-lg mx-auto text-center">
-      <p>
         <?php
-        while($number <= 10){
-          echo 'Number = ' .$number. '<br>';
-          $number++;
-        }
-        ?>
-      </p>
+          $number = 0;
+          while($number <= 10){ ?>
+          <p>Nombre = <?= $number ?></p>
+        <?php $number++; } ?>
       <div class="text-right mt-1">Un message de la direction</div>
     </div>
   </div>
